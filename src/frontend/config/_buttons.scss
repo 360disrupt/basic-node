@@ -1,0 +1,31 @@
+/*Buttons*/
+.btn-cta {
+	color: #fff;
+	margin-top:1rem;
+	margin-bottom: 1rem;
+	padding: 1rem 2.5rem;
+
+	// &:hover {
+	// 	color:#fff;
+
+	// }
+ //  &.active {
+ //  }
+}
+
+
+.btn-red {
+  color: $white;
+  background-color: $red;
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 2.5rem;
+  &:hover {
+    color:$white;
+    background-color: darken($red,10%);
+  }
+  &.active {
+    color:$white;
+    background-color: darken($red,10%);
+  }
+}
