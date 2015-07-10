@@ -7,9 +7,7 @@ module.exports = (environment) ->
     return {'url' : "mongodb://localhost/example-mongo-db", 'authdb':"admin"}
 
   else if(environment=='production')
-    return {'url' : "mongodb://localhost/example-mongo-db", 'authdb':"admin"}
+    return {'url' : "mongodb://<username>:<pass>@proximus.modulusmongo.net:<port>/<authdb>", 'authdb':"<authdb>"}
 
-  # else if(environment=='production')
-  #   return {'url' : "mongodb://<username>:<pass>@proximus.modulusmongo.net:<port>/<authdb>", 'authdb':"<authdb>"}
 
 
