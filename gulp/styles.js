@@ -14,9 +14,7 @@ gulp.task('styles', function () {
 
 //Inject first all base settings
   var preInjectFiles = gulp.src([
-    paths.src + '/frontend/config/**/_load_order.scss',
-    '!' + paths.src + '/frontend/index.scss',
-    '!' + paths.src + '/frontend/vendor.scss'
+    paths.src + '/frontend/config/_load_order.scss'
   ], { read: false });
 
   var preInjectOptions = {
@@ -30,7 +28,7 @@ gulp.task('styles', function () {
     addRootSlash: false
   };
 
-//Then add other files, exclude firt injected files
+//Then add other files, exclude first injected files
   var injectFiles = gulp.src([
     paths.src + '/frontend/**/*.scss',
     '!' + paths.src + '/frontend/config/**/*.scss',

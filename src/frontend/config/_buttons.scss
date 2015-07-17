@@ -20,12 +20,44 @@
   margin-top:1rem;
   margin-bottom: 1rem;
   padding: 1rem 2.5rem;
-  &:hover {
+  &:hover, &.active {
     color:$white;
     background-color: darken($red,10%);
   }
-  &.active {
-    color:$white;
+}
+
+.btn-black {
+  color: white;
+  background-color: $black;
+  &:hover, &.active {
+    color: white;
+    background-color: darken($black,10%);
+  }
+}
+
+.btn-white, &.active {
+  color: $black;
+  background-color: $white;
+  &:hover {
+    color: $white;
+    background-color: darken($white,10%);
+  }
+}
+
+.btn-red, &.active {
+  color: $white;
+  background-color: $red;
+  &:hover {
+    color: $white;
     background-color: darken($red,10%);
+  }
+}
+
+.btn-blue, &.active {
+  color: $black;
+  background-color: $green;
+  &:hover {
+    color: $black;
+    background-color: darken($green,10%);
   }
 }
